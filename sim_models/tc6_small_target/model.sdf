@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<sdf version="1.5">
+  <model name='tc6_small_target'>
+    <link name='tc6_small_target'>
+      <pose>0 0 0 1.5708 0 0</pose>
+      <inertial>
+        <!--pose>0.002709 0 0.51131 0 -0 0</pose-->
+        <mass>11.405</mass>
+        <inertia>
+          <ixx>5.84618</ixx>
+          <ixy>-1.97357e-18</ixy>
+          <ixz>0.0305469</ixz>
+          <iyy>5.77131</iyy>
+          <iyz>-1.85975e-16</iyz>
+          <izz>1.65146</izz>
+        </inertia>
+      </inertial>
+      <collision name='tc6_small_target_collision'>
+        <!--pose>0 0 0 1.5708 -0 0</pose-->
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tc6_small_target/meshes/tc6_small_target.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='tc6_small_target_visual'>
+        <!--pose>0 0 0 1.5708 -0 0</pose-->
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tc6_small_target/meshes/tc6_small_target.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

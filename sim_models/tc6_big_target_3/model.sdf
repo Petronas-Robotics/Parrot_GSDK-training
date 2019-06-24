@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name='tc6_big_target_3'>
+   
+  <include>
+    <uri>model://tc6_big_target</uri>
+    <pose>0 0 0 0 0 0</pose>
+  </include>
+
+  <include>
+    <uri>model://apriltag_3</uri>
+    <pose>0.025 0 1.1 0 0 0</pose>
+  </include>
+
+  <joint name="tag_joint" type="fixed">
+      <child>apriltag_3::link</child>
+      <parent>tc6_big_target::tc6_big_target</parent>
+  </joint>
+    
+  </model>
+</sdf>

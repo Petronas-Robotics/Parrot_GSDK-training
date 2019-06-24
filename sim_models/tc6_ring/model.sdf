@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <model name='tc6_ring'>
+    <link name='tc6_ring'>
+      <pose>0 0 0 1.5708 -0 0</pose>
+      <inertial>
+        <!--pose>-0 0 0.40123 0 -0 0</pose-->
+        <mass>10.176</mass>
+        <inertia>
+          <ixx>4.83082</ixx>
+          <ixy>-2.29503e-18</ixy>
+          <ixz>5.55112e-17</ixz>
+          <iyy>4.69731</iyy>
+          <iyz>-1.62639e-16</iyz>
+          <izz>1.70858</izz>
+        </inertia>
+      </inertial>
+      <collision name='tc6_ring_collision'>
+        <!--pose>0 0 0 1.5708 -0 0</pose-->
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tc6_ring/meshes/tc6_ring.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='tc6_ring_visual'>
+        <!--pose>0 0 0 1.5708 -0 0</pose-->
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tc6_ring/meshes/tc6_ring.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
