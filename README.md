@@ -12,11 +12,11 @@ The codes have been tested using Simulated and actual Anafi 4K drone with GSDK v
 ## How to load the obstacle course models into your Sphinx / Gazebo:
 
  1. Copy all the **contents** of folder `sim_models`.
- 2. Find and go into the folder `.gazebo` in your Home folder. 
-	 a. This is a hidden folder, so if you cannot see it, go to your Home folder, and press `Ctrl + H`.
-	 b. If there is no such folder, just create one (right click > New Folder)
- 3. Go into the models folder; `/home/user/.gazebo/models` 
- 4. Paste the folders copied from Step 1. 
+ 2. Find and go into the folder `.gazebo` in your Home folder.  
+	 a. This is a hidden folder, so if you cannot see it, go to your Home folder, and press `Ctrl + H`.  
+	 b. If there is no such folder, just create one (right click > New Folder)  
+ 3. Go into the models folder; `/home/user/.gazebo/models`   
+ 4. Paste the folders copied from Step 1.   
  
  
 
