@@ -1,0 +1,16 @@
+material tc6_sensor_top/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture sensor_top.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}
+

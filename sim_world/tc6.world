@@ -1,6 +1,60 @@
 <?xml version="1.0"?>
 <sdf version="1.5">
   <world name="default">
+    <!-- A set of spotlights -->
+    <light type="directional" name="spotlight_1">
+      <pose>0 0 1000 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <diffuse>0.65 0.65 0.65 1</diffuse>
+      <specular>0.01 0.01 0.01 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>1 1 -0.4</direction>
+    </light>
+    <light type="directional" name="spotlight_2">
+      <pose>0 0 1000 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <diffuse>0.65 0.65 0.65 1</diffuse>
+      <specular>0.01 0.01 0.01 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-1 1 -0.4</direction>
+    </light>
+    <light type="directional" name="spotlight_3">
+      <pose>0 0 1000 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <diffuse>0.65 0.65 0.65 1</diffuse>
+      <specular>0.01 0.01 0.01 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>1 -1 -0.4</direction>
+    </light>
+    <light type="directional" name="spotlight_4">
+      <pose>0 0 1000 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <diffuse>0.65 0.65 0.65 1</diffuse>
+      <specular>0.01 0.01 0.01 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-1 -1 -0.4</direction>
+    </light>
+
     <gui>
       <camera name="user_camera">
         <pose>-8.89 -14.33 12.97 0.0 0.58 0.84</pose>
@@ -14,8 +68,8 @@
     </gui>
 
     <spherical_coordinates>
-      <latitude_deg>48.878922</latitude_deg>
-      <longitude_deg>2.367782</longitude_deg>
+      <latitude_deg>2.970668</latitude_deg>
+      <longitude_deg>101.737593</longitude_deg>
     </spherical_coordinates>
 
     <physics type="ode">
@@ -73,9 +127,9 @@
       </spawn_point>
     </plugin-->
     
-    <include>
+    <!--include>
       <uri>model://sun</uri>
-    </include>
+    </include-->
     <include>
       <uri>model://ground_plane</uri>
     </include>

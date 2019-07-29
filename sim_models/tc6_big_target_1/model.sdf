@@ -8,14 +8,34 @@
   </include>
 
   <include>
-    <uri>model://apriltag_1</uri>
-    <pose>0.025 0 1.1 0 0 0</pose>
+    <uri>model://tc6_sensor_box</uri>
+    <pose>0.1 0 1.0 0 0 0</pose>
   </include>
+    
+  <include>
+    <uri>model://apriltag_1</uri>
+    <pose>0.105 0 1.1 0 0 0</pose>
+  </include>
+
+  <include>
+    <uri>model://tc6_sensor</uri>
+    <pose>0.02 0 1.5 0 0 0</pose>
+  </include>
+  
+  <joint name="box_joint" type="fixed">
+      <child>tc6_sensor_box::box</child>
+      <parent>tc6_big_target::tc6_big_target</parent>
+  </joint>
 
   <joint name="tag_joint" type="fixed">
       <child>apriltag_1::link</child>
+      <parent>tc6_sensor_box::box</parent>
+  </joint>
+
+  <joint name="sensor_joint" type="fixed">
+      <child>tc6_sensor::link_pcb_copper</child>
       <parent>tc6_big_target::tc6_big_target</parent>
   </joint>
-    
+
   </model>
 </sdf>

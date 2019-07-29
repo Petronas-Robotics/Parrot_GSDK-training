@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="tc6_sensor">
+    <static>true</static>
+    <link name="link_pcb_top">
+      <pose>-0.001 0 0 0 0 0</pose>
+      
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.001 0.22 0.22</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.001 0.22 0.22</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tc6_sensor/materials/scripts</uri>
+            <uri>model://tc6_sensor/materials/textures</uri>
+            <name>tc6_sensor_top/Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <link name="link_pcb_copper">
+      <pose>0 0 0 0 0 0</pose>
+
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.001 0.22 0.22</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.001 0.22 0.22</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tc6_sensor/materials/scripts</uri>
+            <uri>model://tc6_sensor/materials/textures</uri>
+            <name>tc6_sensor_copper/Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

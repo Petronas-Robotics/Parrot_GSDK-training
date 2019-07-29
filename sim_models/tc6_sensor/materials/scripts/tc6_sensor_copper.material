@@ -1,0 +1,16 @@
+material tc6_sensor_copper/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture sensor_copper.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}
+

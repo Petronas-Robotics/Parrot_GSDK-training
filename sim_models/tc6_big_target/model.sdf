@@ -4,7 +4,6 @@
     <link name='tc6_big_target'>
       <pose>0 0 0 1.5708 0 0</pose>
       <inertial>
-        <!--pose>0.002502 0 0.50099 0 -0 0</pose-->
         <mass>11.287</mass>
         <inertia>
           <ixx>5.72909</ixx>
@@ -16,7 +15,6 @@
         </inertia>
       </inertial>
       <collision name='tc6_big_target_collision'>
-        <!--pose>0 0 0 1.5708 -0 0</pose-->
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -25,7 +23,6 @@
         </geometry>
       </collision>
       <visual name='tc6_big_target_visual'>
-        <!--pose>0 0 0 1.5708 -0 0</pose-->
         <geometry>
           <mesh>
             <scale>1 1 1</scale>

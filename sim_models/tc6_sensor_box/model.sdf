@@ -1,0 +1,277 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='tc6_sensor_box'>
+    <static>true</static>
+    <link name='box'>
+      <pose>-0.037286 0 0.1 0 -0 0</pose>
+      <visual name='visual'>
+        <geometry>
+          <box>
+            <size>0.08 0.155 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+          <ambient>0.194 0.187 0.169 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>0.08 0.155 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name='pilot_lamp_blue'>
+      <pose>0.009714 0 0.05 -3.14159 1.57 -3.14159</pose>
+      <visual name='visual'>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+          <ambient>0 0 1 1</ambient>
+          <diffuse>0.3 0.3 1 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='collision'>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+    <link name='pilot_lamp_base_0'>
+      <pose>0.002714 -0.04 0.05 -3.14159 1.57 -3.14159</pose>
+      <visual name='visual'>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='collision'>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+    <link name='pilot_lamp_yellow'>
+      <pose>0.009714 -0.04 0.05 -3.14159 1.57 -3.14159</pose>
+      <visual name='visual'>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+          <ambient>1 1 0.1 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='collision'>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+    <link name='pilot_lamp_red'>
+      <pose>0.009714 0.04 0.05 -3.14159 1.57 -3.14159</pose>
+      <visual name='visual'>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+          <ambient>0.5 0.05 0.05 1</ambient>
+          <diffuse>0.3 0.3 0.3 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='collision'>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+    <link name='pilot_lamp_base_1'>
+      <pose>0.002714 0 0.05 -3.14159 1.57 -3.14159</pose>
+      <visual name='visual'>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='collision'>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+    <link name='pilot_lamp_base_2'>
+      <pose>0.002714 0.04 0.05 -3.14159 1.57 -3.14159</pose>
+      <visual name='visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <shader type='vertex'>
+            <normal_map>__default__</normal_map>
+          </shader>
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='collision'>
+        <geometry>
+          <cylinder>
+            <radius>0.014</radius>
+            <length>0.007</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+    <static>0</static>
+    <allow_auto_disable>1</allow_auto_disable>
+
+    <joint name="lamp_base_0_joint" type="fixed">
+      <child>pilot_lamp_base_0</child>
+      <parent>box</parent>
+    </joint>
+    <joint name="lamp_yellow_joint" type="fixed">
+      <child>pilot_lamp_yellow</child>
+      <parent>pilot_lamp_base_0</parent>
+    </joint>
+    <joint name="lamp_base_1_joint" type="fixed">
+      <child>pilot_lamp_base_1</child>
+      <parent>box</parent>
+    </joint>
+    <joint name="lamp_blue_joint" type="fixed">
+      <child>pilot_lamp_blue</child>
+      <parent>pilot_lamp_base_1</parent>
+    </joint>
+    <joint name="lamp_base_2_joint" type="fixed">
+      <child>pilot_lamp_base_2</child>
+      <parent>box</parent>
+    </joint>
+    <joint name="lamp_red_joint" type="fixed">
+      <child>pilot_lamp_red</child>
+      <parent>pilot_lamp_base_2</parent>
+    </joint>
+  </model>
+</sdf>
