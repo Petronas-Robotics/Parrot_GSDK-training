@@ -25,6 +25,7 @@ The codes have been tested using Simulated and actual Anafi 4K drone with GSDK v
  1. The basic command to load a custom world together with a drone is  
 	 > $ sphinx <path/to/my.world> <path/to/my.drone>
  2. So if you are using the default drone configuration;
+ 	 > $ sudo systemctl start firmwared.service 
 	 > $ sphinx sim_world/tc6.world /opt/parrot-sphinx/usr/share/sphinx/drones/anafi4k.drone::stolen_interface=::simple_front_cam=true
 
 
